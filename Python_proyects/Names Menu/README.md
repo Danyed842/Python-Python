@@ -1,5 +1,5 @@
 # Names Menu
-An interactive menu with some options built in python.
+an interactive menu with some options built in python.
 Features: save names in list, remove or show the list, exit.
 ## How to run
 '''bash
