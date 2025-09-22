@@ -17,4 +17,38 @@ words.append(word4)
 words.append(word5)
 for word in (words):
     cant_letters = len(word)
-print(f"the word with more letters have: {cant_letters} letters")
+    larger_word = max(words)
+print(f"the word with more letters have: {cant_letters} letters and the word are:{larger_word}")
+print("------")
+students = {"David": 3.4,
+            "Jose": 3.9,
+            "Joshua": 4.2
+}
+for name, grade in students.items():
+    print(f"The name of the student is: {name} and the grade is: {grade}")
+prom = sum(students.values()) / len(students)
+print(prom)
+print("------")
+inventory = {
+
+}
+while True:
+    print(1, "add products")
+    print(2, "update quantity")
+    print(3, "show inventory")
+    print(4, "exit")
+    option = int(input("choose an option: "))
+    if option == 1:
+        product = input("put the name of the product: ")
+        quantity = int(input("put the quantity of products: "))
+        inventory[product] = quantity
+    elif option == 2:
+        quantity = int(input("put the quantity of products: "))
+        inventory[product] = quantity
+    elif option == 3:
+        print(inventory)
+    elif option == 4:
+        print("goodbye")
+        break
+    else:
+        print("isn't a valide option")
